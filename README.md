@@ -4,8 +4,14 @@ Investigation into software defect co-occurence
 # Premise
 When examining defects found in a platform/product/service (called a "target" going forward), we regularly find patterns of commonly-paired CWEs.  The most anectdotal of these is the commonly found xSS and xSRF.  These are different bugs, but if you find one you'll likely find the other.  And, by knowing that fact, one is better informed about what to look for when hunting for bugs.
 
+# Background
+This is a continuation of previous PoCs that were done over the past 3 years.  In both previous cases, knowledge was gained but no work artifiacts were retained.  
+
 # Hypothesis
 Defect co-occurence is not purely random, but are at least partially subject to the training/biases/ptractices of the developers who created them.  THerefore, there is a passive, latent connection between specific CWEs.  If that is true, then there is a finite set of CWEs {X,Y} in which if X is found in a target then there is a non-zero probability with a Lift > 1.0 that Y also exists within the same target.
+
+# Goal
+Identify patterns and/or causal links that can lead to an improved understanding concerning defect origin, especially findings that can lead to improved mitigations.
 
 # Roadmap
 1. ETL NIST NVDB and MITRE taxonomies (CPE, CWE, etc)
