@@ -1,0 +1,8 @@
+[submodule "data/upstream/cvelistV5"]
+	path = data/upstream/cvelistV5
+	url = https://github.com/CVEProject/cvelistV5.git
+	branch = main
+[submodule "data/upstream/cve-schema"]
+	path = data/upstream/cve-schema
+	url = https://github.com/CVEProject/cve-schema.git
+	branch = main
